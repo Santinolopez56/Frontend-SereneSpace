@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+    color: #F2F4F3;
+}
+
+.contenedor-header{
+    display: flex;
+    flex-direction:row;
+    max-width: 100%;
+    background-color: #5E503F;
+    font-family:'Raleway', sans-serif;
+    padding: 5px;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.nav{
+    justify-content: space-between;
+}
+nav a:hover{
+    color:#0A0908;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    height: 90px;
+    margin-right:10px;
+}
