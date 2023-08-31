@@ -29,7 +29,6 @@ export default function Body() {
         <footer>
             <div class="contenedor-final">
                 <p>&copy; Interiores Locos</p>
-                <h2>Sucursales</h2>
             </div>
         </footer>
 
