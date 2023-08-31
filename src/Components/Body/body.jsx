@@ -1,5 +1,5 @@
 import sillonenl from '../../multimedia/sillon en l.jpg'
-// import interior from '../../multimedia/interior.jpg'
+import interior from '../../multimedia/interior.jpg'
 
 import './body.css';
 
