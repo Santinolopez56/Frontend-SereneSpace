@@ -1,5 +1,5 @@
 import genga from '../../multimedia/genga.jpg'
-
+import {Link} from 'react-router-dom';
 import './header.css';
 
 export default function Header() {
@@ -14,7 +14,7 @@ export default function Header() {
             <div>
                 <nav>
                     <a href="" class="Nav-Link">Inicio</a>
-                    <a href="" class="Nav-Link">Iniciar Sesion</a>
+                    <h1><Link to='/login'>Iniciar Sesión</Link></h1>
                     <a href="" class="Nav-Link">Catalago</a>
                     <a href="" class="Nav-Link">Contactanos</a>
                     <a href="" class="Nav-Link">Carrito</a>

@@ -1,11 +1,10 @@
-@font-face {
-    font-family:fuente1;
-    src: url(font-family: 'Raleway', sans-serif;
-    font-family: 'Space Grotesk', sans-serif;);
-}
+@import URL(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
+@import URl(https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&display=swap);
+
 a{
     text-decoration: none;
     color: #F2F4F3;
+    margin-right: 20px;
 }
 
 .contenedor-header{
