@@ -5,11 +5,12 @@ body {
 
 .container {
     max-width: 400px;
+    background-color: #5E503F;
     margin: 0 auto;
     padding: 20px;
-    background-color: #d0a773;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
 }
 
 h1 {
@@ -24,20 +25,20 @@ h1 {
 label {
     display: block;
     font-weight: bold;
-    color: #693f25;
+    color: white;
 }
 
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 350px;
     padding: 10px;
     border: 1px solid #693f25;
     border-radius: 5px;
 }
 
 input[type="button"] {
-    background-color: #693f25;
-    color: #fff;
+    background-color: #A9927D;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -45,7 +46,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #542c1c;
+    background-color: #8b7867;
 }
 
 .register-link {
@@ -54,6 +55,6 @@ input[type="button"]:hover {
 }
 
 .register-link a {
-    color: #693f25;
+    color:white;
     text-decoration: none;
 }

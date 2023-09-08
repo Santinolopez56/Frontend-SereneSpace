@@ -22,6 +22,7 @@ a{
 .nav{
     justify-content: space-between;
 }
+
 nav a:hover{
     color:#0A0908;
 }

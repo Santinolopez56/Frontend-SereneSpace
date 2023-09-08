@@ -1,6 +1,7 @@
 import sillonenl from '../../multimedia/sillon en l.jpg'
 // import interior from '../../multimedia/interior.jpg'
 
+import Footer from '../footer/Footer.jsx'
 import './body.css';
 
 export default function Body() {
@@ -26,11 +27,6 @@ export default function Body() {
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="contenedor-final">
-                <p>&copy; Interiores Locos</p>
-            </div>
-        </footer>
 
     </body>
     )

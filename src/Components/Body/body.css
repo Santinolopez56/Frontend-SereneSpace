@@ -38,6 +38,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     height: 500px;
+    background-color: #8b7867;
 }
 
 .img-sobre-nosotros {
@@ -50,24 +51,4 @@ button:hover{
     align-items: center;
     max-width: 500px;
     max-height: 600px;
-}
-
-#nuestras-sucursales{
-    background-color: black;
-    color: white;
-    text-align:center;
-}
-#nuestras-sucursales .contenedor-sucursales{
-    padding: 60px 10px;
-}
-#nuestras-sucursales h2{
-    margin-top: 0;
-}
-
-#nuestras-sucursales p{
-    display: none;
-}
-
-.contenedor-final{
-    background-color: #5E503F;
 }
