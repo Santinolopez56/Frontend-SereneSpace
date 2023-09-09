@@ -4,18 +4,26 @@ body {
 }
 
 .container {
-    max-width: 400px;
-    background-color: #5E503F;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #5E503F;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.login-form,
+.register-form {
+    flex: 1;
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #693f25;
+    color: white;
 }
 
 .form-group {
@@ -30,9 +38,9 @@ label {
 
 input[type="text"],
 input[type="password"] {
-    width: 350px;
+    width: 100%;
     padding: 10px;
-    border: 1px solid #693f25;
+    border: 2px solid #8b7867;
     border-radius: 5px;
 }
 
@@ -46,15 +54,5 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #8b7867;
-}
-
-.register-link {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.register-link a {
-    color:white;
-    text-decoration: none;
+    background-color: #857363;
 }
