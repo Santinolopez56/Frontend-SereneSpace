@@ -5,9 +5,6 @@ export default function Footer() {
   return (
     <footer>
       <div class="footer-content">
-            <div class="footer-logo">
-                <img src="logo.png" alt="Logo" width="100"/>
-            </div>
             <div class="footer-links">
                 <ul>
                     <li><a href="#">Aviso de copyright</a></li>

@@ -11,7 +11,7 @@ export default function Body() {
     <body>
         <section id="hero">
             <div class="contenedor-body">
-                <h1>Los Diseños de Interior mas creativos<br></br>"Interiores Locos"</h1>
+                <h1>Diseños de Interior para que puedas disfrutar la serenidad despues de un dia de trabajo<br></br>"Serene Space"</h1>
                 <form action="https://etecvirtual.um.edu.ar/?redirect=0">
                     <button>Mire Nuestro Catalago</button>
                 </form>
@@ -20,8 +20,8 @@ export default function Body() {
 
         <section id="somos-interiores-locos">
             <div class="contenedor-info">
-                <h2>Somos Interiores Locos</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores corrupti earum velit nisi sapiente facere adipisci excepturi porro enim ipsa! Voluptatum, fugiat veritatis accusantium perferendis totam eaque mollitia repellat adipisci?</p>
+                <h2>Somos Serene Space</h2>
+                <p>Serene Place ofrece la esencia del confort y el lujo en cada detalle. Nuestros exquisitos diseños de mobiliario transforman cualquier espacio en un refugio de serenidad y estilo. Descubra una experiencia única de relajación y elegancia con Serene Place.</p>
                 <div class="img-sobre-nosotros">
                     <img src={sillonenl} alt="imagen-sobre-nosotros" class="imagen-sillon-l"/>
                 </div>
