@@ -1,7 +1,7 @@
 @import URL(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
 @import URl(https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&display=swap);
 
-li{
+a{
     text-decoration: none;
     color: #F2F4F3;
     margin-right: 20px;
@@ -20,11 +20,19 @@ li{
     height: 90px;
 }
 
-.nav{
-    justify-content: space-between;
+nav{
+    display:flex;
+    flex-direction: row;
+    text-align: center;
 }
 
-nav li:hover{
+ul {
+    list-style: none;
+    display: flex;
+    font-size:larger;
+}
+
+nav a:hover{
     color:#0A0908;
 }
 

@@ -19,7 +19,9 @@ function App() {
         />
 
         <Route path='/login' element={<>
+          <Header></Header>
           <Loginpage />
+          <Footer />
         </>
         }
         />

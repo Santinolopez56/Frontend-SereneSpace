@@ -1,6 +1,5 @@
 import sillonenl from '../../multimedia/sillon en l.jpg'
 // import interior from '../../multimedia/interior.jpg'
-
 import Footer from '../footer/Footer.jsx'
 import './body.css';
 
