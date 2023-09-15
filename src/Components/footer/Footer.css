@@ -1,3 +1,39 @@
-footer{
-    background-color: 5E503F;
-}
+@import URL(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
+@import URl(https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&display=swap);
+
+footer {
+    background-color: grey;
+    color: #fff;
+    padding: 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .social-icons {
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+  }
+  

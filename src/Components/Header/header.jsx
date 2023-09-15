@@ -15,9 +15,9 @@ export default function Header() {
             <div>
                 <nav>
                     <ul>
-                        <li class="inicio"><a href="">Inicio</a></li>
-                        <li class="catalogo"><a href="">Catalogo</a></li>
-                        <li class="carrito"><a href="">Carrito</a></li>
+                        <li><Link to='/'>Inicio</Link></li>
+                        <li><Link to='/catalogo'>Catalogo</Link></li>
+                        <li><Link to='/cart'>Carrito</Link></li>
                         <li><Link to='/login'>Iniciar Sesión</Link></li>
                     </ul>
                 </nav>

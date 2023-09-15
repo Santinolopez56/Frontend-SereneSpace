@@ -3,6 +3,9 @@ import './App.css';
 import Header from './Components/Header/header.jsx';
 import Body from './Components/Body/body.jsx';
 import Loginpage from './pages/loginpage.jsx';
+import Registerpage from './pages/registerpage.jsx'
+import Catalogo from './pages/catalogo.jsx'
+import carrito from './Components/cart/cart.jsx'
 import Footer from './Components/footer/Footer';
 
 function App() {
@@ -25,7 +28,31 @@ function App() {
         </>
         }
         />
+
+      <Route path='/register' element={<>
+        <Header></Header>
+        <Registerpage />
+        <Footer />
+      </>
+      }
+      />
       
+      <Route path='/catalogo' element={<>
+        <Header></Header>
+        <Catalogo />
+        <Footer />
+      </>
+      }
+      />
+
+      <Route path='/carrito' element={<>
+        <Header></Header>
+        <carrito />
+        <Footer />
+            </>
+            }
+            />
+
         </Routes>
       </BrowserRouter>
     </div>

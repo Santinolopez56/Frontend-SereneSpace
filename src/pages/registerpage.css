@@ -2,19 +2,18 @@
 @import URl(https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&display=swap);
 
 body {
-    background-color: 857363;
+    background-color: #857363;
     font-family: Arial, sans-serif;
 }
 
 .container {
+    margin-top: 70%;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #d0a773;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 h1 {
@@ -39,7 +38,6 @@ input[type="password"] {
     padding: 10px;
     border: 1px solid #693f25;
     border-radius: 5px;
-    
 }
 
 input[type="button"] {
@@ -53,14 +51,4 @@ input[type="button"] {
 
 input[type="button"]:hover {
     background-color: #542c1c;
-}
-
-.register-link {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.register-link a {
-    color: #693f25;
-    text-decoration: none;
 }

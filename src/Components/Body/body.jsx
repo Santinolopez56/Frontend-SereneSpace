@@ -1,5 +1,4 @@
 import sillonenl from '../../multimedia/sillon en l.jpg'
-// import interior from '../../multimedia/interior.jpg'
 import Footer from '../footer/Footer.jsx'
 import './body.css';
 
@@ -11,7 +10,7 @@ export default function Body() {
         <section id="hero">
             <div class="contenedor-body">
                 <h1>Diseños de Interior para que puedas disfrutar la serenidad despues de un dia de trabajo<br></br>"Serene Space"</h1>
-                <form action="https://etecvirtual.um.edu.ar/?redirect=0">
+                <form action="/catalogo">
                     <button>Mire Nuestro Catalago</button>
                 </form>
             </div>
