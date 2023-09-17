@@ -4,7 +4,8 @@
 footer {
     background-color: grey;
     color: #fff;
-    padding: 30px;
+    padding: 41px;
+    margin-top: 40px;
   }
   
   .footer-content {
@@ -12,7 +13,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 20px;
   }
   

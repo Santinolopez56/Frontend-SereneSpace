@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 import instagram from '../../multimedia/instagram.png'
 import twitter from '../../multimedia/twitter.png'
 import github from '../../multimedia/github.png'
