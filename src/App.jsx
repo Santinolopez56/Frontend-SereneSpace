@@ -46,7 +46,6 @@ function App() {
 
       <Route path='/carrito' element={<>
         <Header></Header>
-        {/* <Carrito/> */}
         <Footer />
         </>
         }
