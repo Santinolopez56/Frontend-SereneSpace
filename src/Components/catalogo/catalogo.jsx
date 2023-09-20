@@ -1,10 +1,11 @@
 import './catalogo.css';
-import producto1 from '../multimedia/Producto 1.png'
-import producto2 from '../multimedia/producto 2.png'
-import producto3 from '../multimedia/producto 3.png'
-import producto4 from '../multimedia/producto 4.png'
-import producto5 from '../multimedia/escritorio.png'
-import producto6 from '../multimedia/sillon bola.png'
+import producto1 from '../../multimedia/Producto 1.png'
+import producto2 from '../../multimedia/producto 2.png'
+import producto3 from '../../multimedia/producto 3.png'
+import producto4 from '../../multimedia/producto 4.png'
+import producto5 from '../../multimedia/escritorio.png'
+import producto6 from '../../multimedia/sillon bola.png'
+
 
 export default function catalogo() {
     return (
