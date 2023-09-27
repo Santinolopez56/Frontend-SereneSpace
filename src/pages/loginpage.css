@@ -42,19 +42,6 @@ input[type="password"] {
     
 }
 
-input[type="button"] {
-    background-color: #693f25;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type="button"]:hover {
-    background-color: #542c1c;
-}
-
 .register-link {
     text-align: center;
     margin-top: 10px;
@@ -63,4 +50,16 @@ input[type="button"]:hover {
 .register-link a {
     color: #693f25;
     text-decoration: none;
+}
+
+buttonlogin{
+    background-color: #A9927D;
+    font-size: 2em,'Raleway', sans-serif;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: 2px solid #8b7867;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+    color: white;
+    cursor: pointer;
 }

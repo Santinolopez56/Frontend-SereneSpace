@@ -22,7 +22,7 @@ export default function registerpage() {
                     <input type="password" id="confirm-password" name="confirm-password" required/>
                 </div>
                 <div class="form-group">
-                    <input type="button" value="Registrarse"/>
+                    <button>Registrarse</button>
                 </div>
             </form>
         </div>

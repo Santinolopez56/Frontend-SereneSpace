@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import productos from '../catalogo.json';
 
 const Cart = () => {
   const [productos, setProductos] = useState([]);
@@ -28,22 +29,22 @@ const Cart = () => {
 
 
   const eliminarProducto = (index) => {
-    const newProducts = [...products];
-    newProducts.splice(index, 1);
-    setProducts(newProducts);
+    const newProductos = [...productos];
+    newProductos.splice(index, 1);
+    setProductos(newProductos);
   }
   
   const calcularTotal = () => {
-    return products.reduce((total, producto) => total + producto.precio, 0);
+    return productos.reduce((total, producto) => total + producto.precio, 0);
   }
   
   return (
     <div>
       <h2>Carrito de Compras</h2>
-      {products.length === 0 ? (
+      {productos.length === 0 ? (
         <p>No hay productos en el carrito.</p> ) : (
         <ul>
-          {products.map((producto, index) => (
+          {productos.map((producto, index) => (
             <li key={index}>
               <span>{producto.nombre} - ${producto.precio}</span>
               <button onClick={() => eliminarProducto(index)}>Eliminar</button>
@@ -52,7 +53,7 @@ const Cart = () => {
         </ul>
       )}
       <p>Total: ${calcularTotal()}</p>
-      <button onClick={() => agregarProducto({ nombre: 'Producto 1', precio: 10 })}>
+      <button onClick={() => agregarProducto({ nombre: 'Sillon', precio: 140 })}>
         Agregar Producto
       </button>
     </div>
