@@ -6,6 +6,7 @@ import Loginpage from './pages/loginpage.jsx';
 import Registerpage from './pages/registerpage.jsx';
 import Catalogo from './Components/catalogo/catalogo.jsx';
 import Footer from './Components/footer/Footer';
+import Cart from './Components/cart';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
 
       <Route path='/carrito' element={<>
         <Header></Header>
+        <Cart />
         <Footer />
         </>
         }
