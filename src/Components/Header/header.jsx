@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <header>
 
-        <div class="contenedor-header">
-            <div class="logo">
+        <div className="contenedor-header">
+            <div className="logo">
             <Link to='/'><img src={plant} alt="logo tienda" class="logoImg"/>
             </Link>
                 <h2 class="Serene Space">Serene Space</h2>            
@@ -18,7 +18,7 @@ export default function Header() {
                     <ul>
                         <li><Link to='/'>Inicio</Link></li>
                         <li><Link to='/catalogo'>Catalogo</Link></li>
-                        <li><Link to='/cart'>Carrito</Link></li>
+                        <li><Link to='/carrito'>Carrito</Link></li>
                         <li><Link to='/login'>Iniciar Sesión</Link></li>
                     </ul>
                 </nav>
