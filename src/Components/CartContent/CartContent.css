@@ -6,9 +6,8 @@
 }
 
 .cartContent > img {
-    height: 120px;
-    width: 100px;
-    text-align: center;
+    height: 5px;
+    width: 5px;
 }
 
 .cartTotal {

@@ -4,42 +4,42 @@
         "name":"Sillon",
         "description":"Características:Sillón elegante y cómodo para tu hogar u oficina.",
         "price":100,
-        "img":"src/multimedia/Producto 1.png"
+        "img":"https://http2.mlstatic.com/D_NQ_NP_740920-MLA50947337044_072022-O.webp"
     },
     {
         "id":2,
         "name":"Sillas",
         "description":"Características:Sillas ergonómicas para comodidad y estilo excepcionales.",
         "price":50,
-        "img":"src/multimedia/producto 2.png"
+        "img":"../src/multimedia/producto 2.png"
     },
     {
         "id":3,
         "name":"Mesita",
         "description":"Características:Compacta y versátil mesita para tu comodidad diaria.",
         "price":65,
-        "img":"src/multimedia/producto 3.png"
+        "img":"../src/multimedia/producto 3.png"
     },
     {
         "id":4,
         "name":"Alfombra",
         "description":"Características:Alfombra suave y elegante, mejora cualquier espacio con estilo.",
         "price":45,
-        "img":"src/multimedia/producto 4.png"
+        "img":"../src/multimedia/producto 4.png"
     },
     {
         "id":5,
         "name":"Escritorio",
         "description":"Características:Escritorio para que puedas trabajar desde la comodidad de tu hogar.",
         "price":80,
-        "img":"src/multimedia/escritorio.png"
+        "img":"../src/multimedia/escritorio.png"
     },
     {
         "id":6,
         "name":"Sillon Bola",
         "description":"Características:Sillon en forma circular para disfrutar una pelicula con comida.",
         "price":120,
-        "img":"src/multimedia/sillon bola.png"
+        "img":"../src/multimedia/sillon bola.png"
     }
 
 ]

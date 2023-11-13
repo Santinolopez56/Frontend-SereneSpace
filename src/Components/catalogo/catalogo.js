@@ -11,7 +11,7 @@ const Products = () => {
     return data.map((product) => {
         return (
             <div className="card" key={product.id}>
-                <img src={product.img} alt="Producto"/>
+                <img src={product.img} alt=""/>
                 <h2>{product.name}</h2>
                 <p>${product.price}</p>
                 <p>{product.description}</p>

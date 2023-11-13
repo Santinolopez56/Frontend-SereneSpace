@@ -11,8 +11,8 @@ export const CartContent = () => {
   <> 
     <CartElements /> 
     <CartTotal />
-  </>
-  ): (
+  </>): 
+  (
     <h2> Su Carrito esta vacio :C </h2>
   )
 };
