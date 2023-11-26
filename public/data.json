@@ -2,44 +2,44 @@
     {
         "id":1,
         "name":"Sillon",
-        "description":"Características:Sillón elegante y cómodo para tu hogar u oficina.",
+        "description":"Sillón elegante y cómodo para tu hogar u oficina.",
         "price":100,
-        "img":"https://http2.mlstatic.com/D_NQ_NP_740920-MLA50947337044_072022-O.webp"
+        "img":"https://tiendaliving.com.ar/cdn/shop/products/MODULADO1_600x.jpg?v=1652991319"
     },
     {
         "id":2,
         "name":"Sillas",
-        "description":"Características:Sillas ergonómicas para comodidad y estilo excepcionales.",
+        "description":"Sillas ergonómicas para comodidad y estilo excepcionales.",
         "price":50,
-        "img":"../src/multimedia/producto 2.png"
+        "img":"https://images.fravega.com/f500/cf5432a3b51e6e4e0257952a298c1ec8.jpg"
     },
     {
         "id":3,
         "name":"Mesita",
-        "description":"Características:Compacta y versátil mesita para tu comodidad diaria.",
+        "description":"Compacta y versátil mesita para tu comodidad diaria.",
         "price":65,
-        "img":"../src/multimedia/producto 3.png"
+        "img":"https://http2.mlstatic.com/D_NQ_NP_621952-MLA32657222908_102019-O.webp"
     },
     {
         "id":4,
         "name":"Alfombra",
-        "description":"Características:Alfombra suave y elegante, mejora cualquier espacio con estilo.",
+        "description":"Alfombra suave y elegante, mejora cualquier espacio con estilo.",
         "price":45,
-        "img":"../src/multimedia/producto 4.png"
+        "img":"https://static.wixstatic.com/media/f94560_755521dc46d94c48830f33a98d3f9459~mv2.jpg/v1/fill/w_520,h_390,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f94560_755521dc46d94c48830f33a98d3f9459~mv2.jpg"
     },
     {
         "id":5,
         "name":"Escritorio",
-        "description":"Características:Escritorio para que puedas trabajar desde la comodidad de tu hogar.",
+        "description":"Escritorio para que puedas trabajar desde la comodidad de tu hogar.",
         "price":80,
-        "img":"../src/multimedia/escritorio.png"
+        "img":"https://http2.mlstatic.com/D_NQ_NP_968628-MLA43940688156_102020-O.webp"
     },
     {
         "id":6,
         "name":"Sillon Bola",
-        "description":"Características:Sillon en forma circular para disfrutar una pelicula con comida.",
+        "description":"Sillon en forma circular para disfrutar una pelicula con comida.",
         "price":120,
-        "img":"../src/multimedia/sillon bola.png"
+        "img":"https://http2.mlstatic.com/D_NQ_NP_684539-MLA49222243701_022022-O.webp"
     }
 
 ]

@@ -9,6 +9,7 @@ import Products from './Components/catalogo/catalogo.js'
 import Footer from './Components/footer/Footer';
 import CartContent from './Components/CartContent/CartContent';
 
+
 function App() {
   return (
     <div className="App">
@@ -54,10 +55,9 @@ function App() {
         </>
         }
       />
-
         </Routes>
       </BrowserRouter>
-      </Dataprovider>
+    </Dataprovider>
     </div>
   );
 }

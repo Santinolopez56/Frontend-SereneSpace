@@ -3,22 +3,23 @@ import { dataContext } from "../Context/DataContext";
 import "../catalogo/catalogo.css"
 
 const Products = () => {
-    const { data, cart, setCart } =    useContext(dataContext);
+    const {data,cart,setCart} = useContext(dataContext);
 
-    const buyProducts = (product) => {
-        setCart([...cart, product]) 
+    const buyProducts= (products) =>{
+        setCart([ ... cart,products ]);
     };
-    return data.map((product) => {
+
+    return data.map ((product)=> {
         return (
             <div className="card" key={product.id}>
-                <img src={product.img} alt=""/>
-                <h2>{product.name}</h2>
-                <p>${product.price}</p>
-                <p>{product.description}</p>
-                <button onClick={() => buyProducts(product)}>Agregar al Carrito</button>
+                <img src={product.img}/>
+                <h3>{product.name}</h3>
+                <h3>{product.description}</h3>
+                <h4>{product.price}$</h4>
+                <button onClick={()=> buyProducts (product)}>Comprar</button>
             </div>
         );
     });
-};
+}
 
 export default Products;

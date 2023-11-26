@@ -1,12 +1,16 @@
 @import URL(https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap);
 @import URl(https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300&display=swap);
 
-.card{
+.product-card-container{
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin:50px;
     text-align: center;
+}
+
+.card{
+    margin-top:50px,
 }
 
 .card.button{
