@@ -1,9 +1,25 @@
 import {Link} from 'react-router-dom';
 import {useState} from 'react';
 import './loginpage.css';
+import axios from 'axios';
 
 
 export default function Loginpage() {
+
+    const [email, correo] = useState("");
+    const [password, contraseña] = useState("");
+
+    const login = async (e) => {
+        e.preventDefault()
+        try {
+            await axios.post("http://localhost:8080/login", { email, password });
+            alert("Ha podido registrarse correctamente");
+
+        }catch (error) {
+            alert("Hubo un error al iniciar sesion");
+        }
+    }
+
     const [passwordType, setPasswordType] = useState("password");
 
     const showPassword = (e) => {
@@ -19,11 +35,11 @@ export default function Loginpage() {
                 <form action="">
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" required/>
+                        <input type="email" id="email" name="email" value={email} onChange={(e) => correo(e.target.value)} required/>
                     </div>
                     <div class="form-group">
                         <label for="password">Contraseña:</label>
-                        <input type={passwordType} id="password" name="password" required/>
+                        <input type={passwordType} id="password" name="password" value={password} onChange={(e) => contraseña(e.target.value)} required/>
                     </div> 
 
                     <div class="form-group">
@@ -31,7 +47,7 @@ export default function Loginpage() {
                     </div>
 
                     <div class="form-group">
-                        <button>Acceder</button>
+                        <button type="submit" onClick={login}>Acceder</button> 
                     </div>
         
                 </form>

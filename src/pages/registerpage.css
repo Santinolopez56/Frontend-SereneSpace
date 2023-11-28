@@ -52,3 +52,11 @@ input[type="button"] {
 input[type="button"]:hover {
     background-color: #542c1c;
 }
+
+input[type="email"]{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #693f25;
+    border-radius: 5px;
+}
