@@ -8,8 +8,8 @@ export default function Header() {
 
         <div className="contenedor-header">
             <div className="logo">
-            <Link to='/'><img src={plant} alt="logo tienda" className="logoImg"/>
-            </Link>
+            <Link to='/'><img src={plant} alt="logo tienda" className="logoImg"/> </Link>
+            
                 <h2 className="Serene Space">Serene Space</h2>            
             </div>
 

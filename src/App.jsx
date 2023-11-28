@@ -5,7 +5,7 @@ import Header from './Components/Header/header.jsx';
 import Body from './Components/Body/body.jsx';
 import Loginpage from './pages/loginpage.jsx';
 import Registerpage from './pages/registerpage.jsx';
-import Products from './Components/catalogo/catalogo.js'
+import Products from './Components/catalogo/catalogo.jsx'
 import Footer from './Components/footer/Footer';
 import CartContent from './Components/CartContent/CartContent';
 

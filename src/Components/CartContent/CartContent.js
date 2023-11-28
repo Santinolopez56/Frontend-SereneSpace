@@ -1,7 +1,6 @@
 import CartElements from "./CartElements";
 import CartTotal from "./CartTotal"
 
-
 import "../CartContent/CartContent.css"
 
 

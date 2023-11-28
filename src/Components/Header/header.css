@@ -44,8 +44,9 @@ nav a:hover{
     align-items: center;
 }
 
-.logoImg{
+img.logoImg{
     height: 77px;
     width: 77px;
     margin-left:15px;
+    margin-bottom: 50px;
 }
