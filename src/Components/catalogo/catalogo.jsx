@@ -4,8 +4,53 @@ import axios from "axios";
 import "../catalogo/catalogo.css"
 
 export const Products = () => {
-    const {data, buyProducts} = useContext(dataContext);
-    const [data1, setData] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+  const [data, setData] = useState([]);
+
+  const addToCart = (product) => {
+      if (cartItems[product.id]) {
+          const updatedCart = { ...cartItems };
+          updatedCart[product.id].quantity += 1;
+          setCartItems(updatedCart);
+      } else {
+          setCartItems({
+          ...cartItems,
+          [product.id]: { ...product, quantity: 1 },
+          });
+      }
+  };
+
+  const removeFromCart = (productId) => {
+      const updatedCart = { ...cartItems };
+
+      if (updatedCart[productId]) {
+          if (updatedCart[productId].quantity > 1) {
+              updatedCart[productId].quantity -= 1;
+          } else {
+              delete updatedCart[productId];
+          }
+
+          setCartItems(updatedCart);
+      }
+  };
+
+  const filteredCart = Object.values(cartItems).map(({ id, quantity }) => ({ id, quantity }));
+  const jsonifiedCart = JSON.stringify(filteredCart);
+
+  const handleCart = async () => {
+      if (jsonifiedCart !== "[]") {
+          try {
+              await axios.post('http://localhost:8080/cart', {jsonifiedCart});
+  
+              alert('Articulos comprados con exito');
+          } catch (err) {
+              alert('Error al realizar la compra');
+              console.log("Error al registrar carrito: ", err)
+          }    
+      } else {
+          alert('Seleccionar articulos antes de realizar la compra');
+      }
+  };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -25,35 +70,25 @@ export const Products = () => {
     return (
       <div id='productos'> 
         <div className="items"> 
-
           <div className="container-items">
-
-            {data1 && data1 ["products"] ? (
-
-              data1[ "products" ].map((product) => (
-
-                <div className="item" key={product.id}>
-
-                  <div className="info-product">
-
-                    <h3>{product.name}</h3>
-
-                    <h4>{product.price}$</h4>
-
-                    <h4>{product.description}</h4>
-
+          {
+            Object.values(data).map((products) => (
+            <div className="item" key={products.id}>
+              <div className="info-product">
+                    
                     <figure>
-                      <img src={product.image} alt="img-product"/>
+                      <img src={products.image} className="img-product"/>
                     </figure>
 
-                    <button onClick={() => buyProducts(product)}>Agregar al carrito</button>
+                    <h3>{products.name}</h3>
+                    <h4>${products.price}</h4>
+                    <h4>{products.description}</h4>
+                    <button>Agregar al carrito </button>
                     
                   </div>
                 </div>
               ))
-            ) : (
-              <p>No hay productos disponibles.</p>
-            )}
+           }
           </div>
         </div>
       </div>

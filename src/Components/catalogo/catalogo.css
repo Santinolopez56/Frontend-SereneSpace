@@ -9,18 +9,20 @@
     text-align: center;
 }
 
-
-div.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-}
-
-/* img{
+.img-product{
     height: 250px;
     width: 300px;
     margin-top: 50px;
+    border-radius: 1rem;
 
-} */
+}
+
+div.info-product{
+    box-shadow: 1px 10px;
+    background-color: black;
+    width:400px;
+    margin-left: 40px;
+}
 
 .card.button{
     border:none;
