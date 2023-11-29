@@ -33,12 +33,10 @@ export const Products = () => {
                     <figure>
                       <img src={products.image} className="img-product"/>
                     </figure>
-
                     <h3>{products.name}</h3>
                     <h4>${products.price}</h4>
                     <h4>{products.description}</h4>
-                    <button   >Agregar al carrito </button>
-                    
+                    <button>Agregar al carrito </button> 
                   </div>
                 </div>
               ))
