@@ -12,17 +12,15 @@ export const Products = () => {
             try {
                 const response = await axios.get('http://localhost:8080/producto');
                 console.log(response.data)
-                setData(data.product);
+                setData(response.data);
+
+
             } catch (error) {
                 console.error('Error interno del servidor:', error);
             }
         };
         fetchData();
-    }, []);
-
-
-    console.log(data);
-    console.log(data["products"])
+    },[]);
 
     return (
       <div id='productos'> 
@@ -30,9 +28,9 @@ export const Products = () => {
 
           <div className="container-items">
 
-            {data1 && data1.products && data1.products.length > 0 ? (
+            {data1 && data1 ["products"] ? (
 
-              data1.products.map((product) => (
+              data1[ "products" ].map((product) => (
 
                 <div className="item" key={product.id}>
 
