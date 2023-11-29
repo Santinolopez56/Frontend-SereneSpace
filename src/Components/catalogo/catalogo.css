@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+div.container-items{
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+
 .img-product{
     height: 250px;
     width: 300px;
@@ -18,8 +25,6 @@
 }
 
 div.info-product{
-    box-shadow: 1px 10px;
-    background-color: black;
     width:400px;
     margin-left: 40px;
 }

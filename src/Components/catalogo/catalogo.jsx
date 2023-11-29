@@ -4,53 +4,7 @@ import axios from "axios";
 import "../catalogo/catalogo.css"
 
 export const Products = () => {
-  const [cartItems, setCartItems] = useState([]);
   const [data, setData] = useState([]);
-
-  const addToCart = (product) => {
-      if (cartItems[product.id]) {
-          const updatedCart = { ...cartItems };
-          updatedCart[product.id].quantity += 1;
-          setCartItems(updatedCart);
-      } else {
-          setCartItems({
-          ...cartItems,
-          [product.id]: { ...product, quantity: 1 },
-          });
-      }
-  };
-
-  const removeFromCart = (productId) => {
-      const updatedCart = { ...cartItems };
-
-      if (updatedCart[productId]) {
-          if (updatedCart[productId].quantity > 1) {
-              updatedCart[productId].quantity -= 1;
-          } else {
-              delete updatedCart[productId];
-          }
-
-          setCartItems(updatedCart);
-      }
-  };
-
-  const filteredCart = Object.values(cartItems).map(({ id, quantity }) => ({ id, quantity }));
-  const jsonifiedCart = JSON.stringify(filteredCart);
-
-  const handleCart = async () => {
-      if (jsonifiedCart !== "[]") {
-          try {
-              await axios.post('http://localhost:8080/cart', {jsonifiedCart});
-  
-              alert('Articulos comprados con exito');
-          } catch (err) {
-              alert('Error al realizar la compra');
-              console.log("Error al registrar carrito: ", err)
-          }    
-      } else {
-          alert('Seleccionar articulos antes de realizar la compra');
-      }
-  };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -83,7 +37,7 @@ export const Products = () => {
                     <h3>{products.name}</h3>
                     <h4>${products.price}</h4>
                     <h4>{products.description}</h4>
-                    <button>Agregar al carrito </button>
+                    <button   >Agregar al carrito </button>
                     
                   </div>
                 </div>
