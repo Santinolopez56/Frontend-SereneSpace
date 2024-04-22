@@ -1,7 +1,5 @@
 import plant from '../../multimedia/plant.png'
 import {Link} from 'react-router-dom';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
 import './header.css';
 
 export default function Header() {
@@ -14,19 +12,17 @@ export default function Header() {
             
                 <h2 className="Serene Space">Serene Space</h2>            
             </div>
-
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
             <div>
                 <nav>
                     <ul>
-                        <Autocomplete
-                            id="grouped-demo"
-                            options={options.sort((a, b) => -b.firstLetter.localeCompare(a.firstLetter))}
-                            groupBy={(option) => option.firstLetter}
-                            getOptionLabel={(option) => option.title}
-                            sx={{ width: 300 }}
-                            renderInput={(params) => <TextField {...params} label="With categories" />}
-                        />
-
                         <li><Link to='/'>Inicio</Link></li>
                         <li><Link to='/catalogo'>Catalogo</Link></li>
                         <li><Link to='/carrito'>Carrito</Link></li>
