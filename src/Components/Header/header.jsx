@@ -1,8 +1,14 @@
 import plant from '../../multimedia/plant.png'
 import {Link} from 'react-router-dom';
 import './header.css';
+import { setup } from '../../modelo/modelo.js';
+import { useEffect } from 'react';
+
 
 export default function Header() {
+    useEffect(() => {
+        setup();
+      }, []);
   return (
     <header>
 
@@ -12,10 +18,12 @@ export default function Header() {
             
                 <h2 className="Serene Space">Serene Space</h2>            
             </div>
+            
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
                     <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <input id="pred_features" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <input id="pred_labels" disabled></input>
                     <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>

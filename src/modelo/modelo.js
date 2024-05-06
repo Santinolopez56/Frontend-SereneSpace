@@ -4,7 +4,7 @@ const max_len = 10;
 let model;
 const tf = require('@tensorflow/tfjs');
 
-async function setup() {
+export async function setup() {
     model = await create_model(max_len, ALPHA_LEN);
     model = await loadModelFromFile();
 
@@ -115,5 +115,3 @@ async function loadModelFromFile() {
         throw error;
     }
 }
-
-export { setup };
